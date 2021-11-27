@@ -6,7 +6,7 @@
             <title>Cadastro de usuarios</title>
             </head>
             <body>
-                <form action="{{ route('users.store') }}" method="POST">
+                <form action="{{ route('user.store') }}" method="POST">
                     @csrf
                     <label for="">Nome Usuario</label>
                     <input type="text" name="name">
