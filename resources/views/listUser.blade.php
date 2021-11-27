@@ -1,3 +1,14 @@
-<h1>Listagem de usuario</h1>
+<!DOCTYPE html>
+<html lang="pt-br">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <title>Detalhes do usuarios</title>
+            </head>
+            <body>
 
-<p> O nome do usuario é {{ $user->name }} e ele tem o email {{ $user->email }}</p>
+                <h1>{{ $user->name }}</h1>
+                <p>{{ $user->email }}</p>
+                <p>{{ date('d/m/y H:i', strtotime($user->created_at)) }}</p>
+            </body>
+    </html>
